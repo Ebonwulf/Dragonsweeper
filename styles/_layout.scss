@@ -32,6 +32,15 @@ body {
   grid-template-rows: repeat(6, 1fr);
   margin-left: 3%;
 }
+.game-grid > [data-status='hidden'] {
+  background-color: $text-color;
+}
+.game-grid > [data-status='dragon'] {
+  background-color: aqua;
+}
+.game-grid > [data-status='marked'] {
+  background-color: yellow;
+}
 
 .game-grid-square {
   display: flex;

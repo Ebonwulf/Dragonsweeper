@@ -41,6 +41,18 @@ body {
   margin-left: 3%;
 }
 
+.game-grid > [data-status=hidden] {
+  background-color: #e9e9e9;
+}
+
+.game-grid > [data-status=dragon] {
+  background-color: aqua;
+}
+
+.game-grid > [data-status=marked] {
+  background-color: yellow;
+}
+
 .game-grid-square {
   display: flex;
   flex-direction: row;
