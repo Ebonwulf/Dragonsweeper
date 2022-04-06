@@ -1,0 +1,27 @@
+header {
+  margin-bottom: 5%;
+}
+body {
+  height: 100vh;
+  background-color: $body-color;
+}
+
+.main-heading-box {
+  margin: 2% 20%;
+  background-color: $box-color;
+}
+
+.game-grid {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 0 10%;
+}
+
+.game-grid-square {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
