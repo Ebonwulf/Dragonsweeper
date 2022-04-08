@@ -31,7 +31,7 @@ main {
   width: 60%;
   height: 60vh;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   margin-left: 3%;
 }
@@ -55,4 +55,7 @@ main {
   height: 5vh;
   margin-top: 5%;
   border-radius: 25px;
+}
+audio {
+  src: url('/mixkit-fire-swoosh-burning-1328.wav');
 }
