@@ -1,4 +1,4 @@
-# minesweeper
+# Dragonsweeper
 Ebon's wild attempt at recreating the classic game minesweeper for the portfolio.
 
 Link to figma design layout
