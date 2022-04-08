@@ -4,9 +4,6 @@ const fullGame = document.querySelector('.full-game-board');
 const board = document.querySelector('.game-grid');
 const resetGameButton = document.querySelector('.reset-button');
 
-let numberOfDragons = 10;
-let flags = 0;
-
 const generateDragons = () => {
   for (let i = 0; i < 36; i++) {
     // console.log(i);
@@ -25,14 +22,7 @@ const generateDragons = () => {
       } else {
         tile.style.backgroundImage = "url('/images/Dragonsweeper-tile.png')";
         fullGame.classList.add('game-over-box');
-        if (fullGame.classList.length === 2) {
-          const fire = document.createElement('audio');
-          board.appendChild(fire);
-          fire.play();
-          // fire.loop = false;
-          console.log(fullGame.classList);
-          fullGame.style.backgroundImage = "url('/images/flames.jpg')";
-        }
+        gameOver();
       }
     });
     board.appendChild(tile);
@@ -49,3 +39,17 @@ resetGameButton.addEventListener('click', (e) => {
   });
   generateDragons();
 });
+
+const gameOver = () => {
+  if (fullGame.classList.length === 2) {
+    fullGame.style.backgroundImage = "url('/images/flames.jpg')";
+    const fire = `<audio src="/mixkit-fire-swoosh-burning-1328.wav"></audio>`;
+    const tile = document.querySelectorAll('.game-grid-square');
+    tile.innerHTML += fire;
+    // fire.loop = false;
+    console.log(fire);
+    console.log(fullGame.classList);
+  }
+};
+
+const gameWin = () => {};

@@ -66,10 +66,6 @@ main {
   border-radius: 25px;
 }
 
-audio {
-  src: url("/mixkit-fire-swoosh-burning-1328.wav");
-}
-
 h1 {
   text-align: center;
   height: 10vh;
