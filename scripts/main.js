@@ -3,6 +3,8 @@
 const fullGame = document.querySelector('.full-game-board');
 const board = document.querySelector('.game-grid');
 const resetGameButton = document.querySelector('.reset-button');
+const textDisplay = document.querySelector('.main-text-heading-display');
+const textDisplayBox = document.querySelector('.main-heading-box');
 
 const generateDragons = () => {
   for (let i = 0; i < 36; i++) {
@@ -49,7 +51,12 @@ const gameOver = () => {
     // fire.loop = false;
     console.log(fire);
     console.log(fullGame.classList);
+    textDisplayBox.style.backgroundColor = 'red';
+    textDisplay.innerHTML = 'GAME OVER!';
   }
 };
 
-const gameWin = () => {};
+const gameWin = () => {
+  textDisplay.innerHTML = 'YOU WIN!';
+  textDisplayBox.style.backgroundColor = 'Green';
+};
