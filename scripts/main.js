@@ -38,6 +38,8 @@ resetGameButton.addEventListener('click', (e) => {
   resetTiles.forEach((tile) => {
     tile.remove('game-grid-square');
     fullGame.style.backgroundImage = 'none';
+    textDisplayBox.style.backgroundColor = '#6d02c0';
+    textDisplay.innerHTML = `Ebon's Dragonsweeper <br /> don't get burnt!`;
   });
   generateDragons();
 });
