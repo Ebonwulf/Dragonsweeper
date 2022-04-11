@@ -31,11 +31,13 @@ const generateDragons = () => {
   }
 };
 generateDragons();
+const tiles = document.querySelectorAll('.game-grid-square');
 
 resetGameButton.addEventListener('click', (e) => {
   e.preventDefault();
-  const resetTiles = document.querySelectorAll('.game-grid-square');
-  resetTiles.forEach((tile) => {
+  // const resetTiles = document.querySelectorAll('.game-grid-square');
+  board.style.display = 'grid';
+  tiles.forEach((tile) => {
     tile.remove('game-grid-square');
     fullGame.style.backgroundImage = 'none';
     textDisplayBox.style.backgroundColor = '#6d02c0';
@@ -46,12 +48,11 @@ resetGameButton.addEventListener('click', (e) => {
 
 const gameOver = () => {
   if (fullGame.classList.length === 2) {
-    fullGame.style.backgroundImage = "url('/images/flames.jpg')";
-    const fire = `<audio src="/mixkit-fire-swoosh-burning-1328.wav"></audio>`;
-    const tile = document.querySelectorAll('.game-grid-square');
-    tile.innerHTML += fire;
-    // fire.loop = false;
-    console.log(fire);
+    fullGame.style.backgroundImage = "url('/images/flames-2.jpg')";
+    // const fire = `<audio src="/mixkit-fire-swoosh-burning-1328.wav"></audio>`;
+    const sound = new Audio('../94102__cgeffex__fire-breathing-dragon.flac');
+    sound.play();
+
     console.log(fullGame.classList);
     textDisplayBox.style.backgroundColor = 'red';
     textDisplay.innerHTML = 'GAME OVER!';
@@ -59,6 +60,23 @@ const gameOver = () => {
 };
 
 const gameWin = () => {
-  textDisplay.innerHTML = 'YOU WIN!';
-  textDisplayBox.style.backgroundColor = 'Green';
+  if (fullGame.classList.length === 1) {
+    textDisplay.innerHTML = 'YOU WIN!';
+    textDisplayBox.style.backgroundColor = 'rgb(12, 255, 4)';
+    fullGame.style.backgroundImage = "url('/images/smile.png')";
+    console.log(fullGame.classList);
+    if (board.style.display === 'none') {
+      board.style.display = 'block';
+    } else {
+      board.style.display = 'none';
+    }
+  }
 };
+
+// const revealDragons = () => {
+//   const dragon = document.querySelectorAll('.dragon');
+//   if () {
+//     dragon.style.backgroundImage = "url('/images/Dragonsweeper-tile.png)";
+//   }
+//   console.log(dragon);
+// };
