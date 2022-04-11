@@ -7,7 +7,7 @@ const textDisplay = document.querySelector('.main-text-heading-display');
 const textDisplayBox = document.querySelector('.main-heading-box');
 
 const generateDragons = () => {
-  for (let i = 0; i < 36; i++) {
+  for (let i = 0; i < 64; i++) {
     // console.log(i);
     let tile = document.createElement('div');
     tile.classList.add('game-grid-square');

@@ -39,8 +39,8 @@ main {
   width: 60%;
   height: 60vh;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   margin-left: 3%;
 }
 
