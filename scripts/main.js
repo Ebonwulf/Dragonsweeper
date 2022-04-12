@@ -70,15 +70,15 @@ const gameOver = () => {
   }
 };
 
-const gameWin = () => {
-  isGameOver = true;
-  if (tileCount == 64 - dragonCount && !fullGame.classList.length === 2) {
-    textDisplay.innerHTML = 'YOU WIN!';
-    textDisplayBox.style.backgroundColor = 'rgb(12, 255, 4)';
-    fullGame.style.backgroundImage = "url('../images/smile.png')";
-    console.log(fullGame.classList);
-  }
-};
+// const gameWin = () => {
+//   isGameOver = true;
+//   if (tileCount = 64 - dragonCount && !fullGame.classList.length === 2) {
+//     textDisplay.innerHTML = 'YOU WIN!';
+//     textDisplayBox.style.backgroundColor = 'rgb(12, 255, 4)';
+//     fullGame.style.backgroundImage = "url('../images/smile.png')";
+//     console.log(fullGame.classList);
+//   }
+// };
 
 // const minesGenerated = () => {};
 // const revealDragons = () => {};
