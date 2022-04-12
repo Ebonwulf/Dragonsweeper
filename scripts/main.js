@@ -31,7 +31,7 @@ const generateDragons = () => {
         tileCount++;
         console.log(tileCount);
       } else {
-        tile.style.backgroundImage = "url('/images/Dragonsweeper-tile.png')";
+        tile.style.backgroundImage = "url('./images/Dragonsweeper-tile.png')";
         fullGame.classList.add('game-over-box');
         gameOver();
       }
@@ -60,7 +60,7 @@ resetGameButton.addEventListener('click', (e) => {
 const gameOver = () => {
   isGameOver = true;
   if (fullGame.classList.length === 2) {
-    fullGame.style.backgroundImage = "url('/images/flames-2.jpg')";
+    fullGame.style.backgroundImage = "url('./images/flames-2.jpg')";
 
     const sound = new Audio('../94102__cgeffex__fire-breathing-dragon.flac');
     sound.play();
