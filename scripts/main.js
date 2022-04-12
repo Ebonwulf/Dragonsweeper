@@ -47,11 +47,7 @@ resetGameButton.addEventListener('click', (e) => {
   generateDragons();
 });
 
-const gameOver = (e) => {
-  if (e.target.className == 'game-grid-square') {
-    e.stopPropagation();
-    e.preventDefault();
-  }
+const gameOver = () => {
   if (fullGame.classList.length === 2) {
     fullGame.style.backgroundImage = "url('/images/flames-2.jpg')";
     // const fire = `<audio src="/mixkit-fire-swoosh-burning-1328.wav"></audio>`;
@@ -86,3 +82,4 @@ const gameOver = (e) => {
 //   }
 //   console.log(dragon);
 // };
+const minesGenerated = () => {};

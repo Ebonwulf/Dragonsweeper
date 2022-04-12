@@ -4,6 +4,13 @@ h1 {
   color: $text-color;
   font-size: 3.2em;
 }
+.mines-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  margin: 1% 0;
+}
 
 .game-grid-square {
   display: flex;
