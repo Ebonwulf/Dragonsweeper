@@ -10,4 +10,6 @@ This project has been an amazing challenge and is still a work in progress. Belo
 * Numbers surrounding the dragons based on how many are near by.
 * Display the dragon count above the grid
 * GET THE GAME WIN FUNCTION WORKING!
+* fix the issue of the sound and flames displaying on the deployed version on github pages (it does work locally)
+* Potentially make the grid much larger, the tiles a little smaller and have several squares pop open when an empty square is click (like the original functionallity of minesweeper)
 
